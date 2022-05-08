@@ -11,6 +11,7 @@ export default function handler(req, res){
             },
             },
         )
+        
     
         const data = await response.json()
         console.log('cmc api data',data)
