@@ -13,9 +13,10 @@ export default function handler(req, res){
                 },
             },
         )
-        //let json = require('../../data/vendor.json')
-        //const data = json//await response.json()
         const data = await response.json()
+        // let json = require('../../data/vendor.json')
+        // const data = json
+        
         console.log('cmc api data',data)
         res.status(200).json({ data })
 
